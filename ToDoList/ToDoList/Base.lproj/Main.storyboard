@@ -33,12 +33,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3093" y="656"/>
+            <point key="canvasLocation" x="1081" y="836"/>
         </scene>
         <!--To-Do List-->
         <scene sceneID="dbc-Hu-PdS">
             <objects>
-                <tableViewController id="Fu9-TN-phN" sceneMemberID="viewController">
+                <tableViewController id="Fu9-TN-phN" customClass="ToDoListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ODR-a5-m8X">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -302,11 +302,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sC0-1b-7NQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2403" y="656"/>
+            <point key="canvasLocation" x="393" y="922"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r3J-Ul-CMF">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3SV-6Y-gD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YGY-AL-FBv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eIR-Ti-DLQ">
@@ -315,34 +316,11 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Pay-gl-E9v" kind="relationship" relationship="rootViewController" id="IaH-Tj-r6x"/>
+                        <segue destination="Fu9-TN-phN" kind="presentation" id="gsy-FC-cxF"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3SV-6Y-gD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="779" y="656"/>
-        </scene>
-        <!--Add To-Do List-->
-        <scene sceneID="hwZ-9K-seY">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pay-gl-E9v" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Add To-Do List" id="gGC-Tn-5MV">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="7hI-qk-tbj"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Hfj-87-g1i"/>
-                    </navigationItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fSp-6I-prn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Fu9-TN-phN" kind="relationship" relationship="rootViewController" id="w7d-JH-P2U"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u8O-sM-K6w" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1591" y="656"/>
+            <point key="canvasLocation" x="579" y="176"/>
         </scene>
     </scenes>
 </document>
